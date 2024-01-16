@@ -499,12 +499,20 @@ hr {
 
 /* footer section styles */
 footer {
+    text-align: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     background: rgba(19, 19, 24, 0.05);
 }
 
 footer .f-content {
     text-align: center;
-    padding: 100px 335px;
+    width: 61%;
+    max-width: 870px;
+    margin: 100px auto;
+    /* padding: 100px 335px; */
+
 }
 
 footer .f-content .f-icon {
@@ -515,8 +523,8 @@ footer .f-content .f-icon {
 }
 
 footer .f-content p {
-    width: 54%;
-    max-width: 770px;
+    /* width: 54%;
+    max-width: 770px; */
     margin: 0 auto;
     color: #5A5A5D;
     font-size: 16px;
@@ -555,7 +563,9 @@ button:hover{
 }
 /* mobile responsive */
 @media screen and (max-width: 600px) {
-
+    *{
+        overflow-x: hidden;
+    }
     /* navbar */
     header {
         margin-top: 20px;
@@ -629,6 +639,9 @@ button:hover{
     }
 
     /* destination section */
+    .destination .img{
+        overflow-x: hidden;
+    }
     .destination .text h2 {
         text-align: center;
         font-size: 20px;
@@ -709,7 +722,11 @@ button:hover{
     }
     /* footer section */
     footer .f-content{
+        overflow-x: hidden;
+        text-align: center;
         width: 90%;
-        margin-left: -300px;
+        /* width: 60vw; */
+        /* margin-left: -300px; */
+        margin: 50px auto;
     }
 }
