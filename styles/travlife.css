@@ -162,6 +162,7 @@ button {
 .tours .text {
     width: 50%;
 }
+
 /* .tours .img{
     width: 50%;
 } */
@@ -180,10 +181,12 @@ button {
     font-weight: 400;
     line-height: 26px;
 }
-.tours .text ul{
+
+.tours .text ul {
     list-style-position: inside;
     margin-bottom: 24px;
 }
+
 .tours .text li {
     color: rgba(19, 19, 24, 0.70);
     font-size: 16px;
@@ -192,6 +195,127 @@ button {
     text-align: left;
     margin-bottom: 16px;
 }
+
+
+
+/* destination styles */
+.destination .text h2 {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.destination .text p {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.destination .img {
+    width: 1170px;
+
+}
+
+.destination .img div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.destination .img #maldive {
+    background-image: url(../Images/Rectangle\ 5.png);
+    width: 573px;
+    height: 300px;
+}
+
+.destination .img #indo {
+    background-image: url(../Images/Rectangle\ 8.png);
+    width: 573px;
+    height: 300px;
+}
+
+.destination .img #sri {
+    background-image: url(../Images/Rectangle\ 6.png);
+    width: 374px;
+    height: 286px;
+}
+
+.destination .img #america {
+    background-image: url(../Images/Rectangle\ 7.png);
+    width: 474px;
+    height: 286px;
+    margin-right: -160px;
+}
+
+.destination .img #kashmir {
+    background-image: url(../Images/Rectangle\ 9.png);
+    width: 274px;
+    height: 286px;
+    /* margin-left: -150px; */
+}
+
+.destination .img #bd {
+    background-image: url(../Images/Rectangle\ 11.png);
+    width: 473px;
+    height: 300px;
+}
+
+.destination .img #bandar {
+    background-image: url(../Images/Rectangle\ 10.png);
+    width: 673px;
+    height: 300px;
+    margin-left: -100px;
+}
+
+#maldive {
+    grid-area: maldive;
+}
+
+#sri {
+    grid-area: sri;
+}
+
+#indo {
+    grid-area: indo;
+}
+
+#america {
+    grid-area: america;
+}
+
+#kashmir {
+    grid-area: kashmir;
+}
+
+#bd {
+    grid-area: bd;
+}
+
+#bandar {
+    grid-area: bandar;
+}
+
+.destination .img {
+    display: grid;
+    grid-template-areas:
+        "maldive maldive indo indo"
+        "sri america america kashmir"
+        "bd bd bandar bandar"
+    ;
+
+    gap: 24px;
+    /* margin-right: 24px; */
+}
+
 /* mobile responsive */
 @media screen and (max-width: 600px) {
 
@@ -240,23 +364,77 @@ button {
     .inputs {
         flex-direction: column;
     }
+
     /* tours section */
-    .tours{
+    .tours {
         flex-direction: column;
     }
+
     .tours .text h2 {
         font-size: 20px;
     }
-    .tours .text p, li{
+
+    .tours .text p,
+    li {
         width: 80vw;
     }
-    .tours .text button{
+
+    .tours .text button {
         margin-bottom: 1.25rem;
     }
-    .tours .img{
+
+    .tours .img {
         width: 80vw;
     }
-    .tours .img img{
+
+    .tours .img img {
         width: 100%;
+    }
+
+    /* destination section */
+    .destination .text h2 {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .destination .text p{
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .destination .img{
+        display: flex;
+        flex-direction: column;
+    }
+    .destination .img #maldive{
+        border-radius: 16px;
+        width: 80vw;
+        background-size: cover;
+    }
+    .destination .img #indo{
+        border-radius: 16px;
+        width: 80vw;
+    }
+    .destination .img #sri{
+        border-radius: 16px;
+        width: 80vw;
+    }
+    .destination .img #america{
+        border-radius: 16px;
+        width: 80vw;
+    }
+    .destination .img #kashmir{
+        border-radius: 16px;
+        width: 80vw;
+    }
+    .destination .img #bd{
+        border-radius: 16px;
+        width: 80vw;
+    }
+    .destination .img #bandar{
+        border-radius: 16px;
+        margin-left: 4px;
+        text-align: center;
+        width: 80vw;
     }
 }
