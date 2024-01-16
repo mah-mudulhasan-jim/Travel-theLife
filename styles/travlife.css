@@ -316,6 +316,93 @@ button {
     /* margin-right: 24px; */
 }
 
+
+
+/* choose section styles */
+.content1{
+    margin-bottom: 24px;
+}
+.choose .text h2 {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 1.25rem;
+}
+
+.choose .text p {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.hotel {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 32px;
+}
+
+.service {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    padding: 32px;
+}
+
+.price {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    width: 49%;
+    max-width: 573px;
+    margin: 0 auto;
+    padding: 32px;
+}
+.price h2{
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+.price p{
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.choose .price img {
+    margin-bottom: 32px;
+}
+
+.choose .content1 img {
+    margin-bottom: 32px;
+}
+
+.choose .content1 h2 {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.choose .content1 p {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.choose .content1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
 /* mobile responsive */
 @media screen and (max-width: 600px) {
 
@@ -397,44 +484,59 @@ button {
         font-size: 20px;
         font-weight: 800;
     }
-    .destination .text p{
+
+    .destination .text p {
         font-size: 14px;
         text-align: center;
     }
-    
-    .destination .img{
+
+    .destination .img {
         display: flex;
         flex-direction: column;
     }
-    .destination .img #maldive{
+
+    .destination .img #maldive {
         border-radius: 16px;
         width: 80vw;
         background-size: cover;
     }
-    .destination .img #indo{
+
+    .destination .img #indo {
         border-radius: 16px;
         width: 80vw;
     }
-    .destination .img #sri{
+
+    .destination .img #sri {
         border-radius: 16px;
         width: 80vw;
     }
-    .destination .img #america{
+
+    .destination .img #america {
         border-radius: 16px;
         width: 80vw;
     }
-    .destination .img #kashmir{
+
+    .destination .img #kashmir {
         border-radius: 16px;
         width: 80vw;
     }
-    .destination .img #bd{
+
+    .destination .img #bd {
         border-radius: 16px;
         width: 80vw;
     }
-    .destination .img #bandar{
+
+    .destination .img #bandar {
         border-radius: 16px;
         margin-left: 4px;
         text-align: center;
         width: 80vw;
+    }
+    /* choose section */
+    .choose .content1{
+        flex-direction: column;
+    }
+    .choose .price{
+        width: 71vw;
     }
 }
