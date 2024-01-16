@@ -319,9 +319,10 @@ button {
 
 
 /* choose section styles */
-.content1{
+.content1 {
     margin-bottom: 24px;
 }
+
 .choose .text h2 {
     color: #131318;
     text-align: center;
@@ -361,18 +362,21 @@ button {
     margin: 0 auto;
     padding: 32px;
 }
-.price h2{
+
+.price h2 {
     color: #131318;
     font-size: 24px;
     font-weight: 800;
     margin-bottom: 16px;
 }
-.price p{
+
+.price p {
     color: #5A5A5D;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
 }
+
 .choose .price img {
     margin-bottom: 32px;
 }
@@ -403,6 +407,91 @@ button {
     gap: 24px;
 }
 
+
+/* newsletter styles */
+.newsletter {
+    display: flex;
+    gap: 24px;
+}
+
+.newsletter .form {
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 40px;
+}
+
+.newsletter .form input {
+    padding: 16px 20px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    margin-bottom: 16px;
+}
+
+.newsletter .form input,
+button {
+    width: 83%;
+    max-width: 393px;
+}
+
+.newsletter .form h2 {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+hr {
+    width: 83%;
+    max-width: 393px;
+    background: rgba(19, 19, 24, 0.10);
+    margin: 24px auto;
+}
+
+.newsletter .form p {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.newsletter .img{
+    width: 60%;
+    max-width: 672px;
+    background: url(../Images/Rectangle\ 8\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+.newsletter .discount {
+    width: 48%;
+    border-radius: 16px;
+    background: #FF5400;
+    padding: 56px 67px 45px 35px;
+    border: none;
+    transform: rotate(-40deg);
+    /* position: bottom right; */
+    /* bottom: 50px;
+    right: 60px; */
+    margin-top: 250px;
+    margin-left: 250px;
+    margin-bottom: 110px;
+}
+
+
+.newsletter  .discount p {
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.newsletter  .discount h3 {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+
+}
 /* mobile responsive */
 @media screen and (max-width: 600px) {
 
@@ -532,11 +621,27 @@ button {
         text-align: center;
         width: 80vw;
     }
+
     /* choose section */
-    .choose .content1{
+    .choose .content1 {
         flex-direction: column;
     }
-    .choose .price{
+
+    .choose .price {
         width: 71vw;
     }
+    /* newsletter section */
+    .newsletter{
+        flex-direction: column;
+    }
+    .newsletter .img{
+        width: 82vw;
+    }
+    .newsletter .discount{
+        width: 64%;
+        margin-left: 150px;
+        margin-bottom: 95px;
+        padding: 20px 20px;
+    }
+    
 }
