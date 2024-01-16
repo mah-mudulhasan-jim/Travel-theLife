@@ -118,6 +118,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
+    border-radius: 16px;
 }
 
 .inputs input,
@@ -592,11 +593,15 @@ button:hover{
 
     /* banner section */
     .banner {
-        padding: 32px 24px;
+        /* padding: 32px 24px; */
         margin-top: 17.8px;
         height: 70vh;
     }
-
+    .banner .content{
+        border-radius: 25px;
+        width: 60vw;
+        /* height: 65vh; */
+    }
     .text h2 {
         color: #FFF;
         font-size: 22px;
@@ -610,13 +615,17 @@ button:hover{
 
     .inputs {
         flex-direction: column;
+        border-radius: 16px;
+        padding: 16px;
     }
 
     /* tours section */
     .tours {
         flex-direction: column;
     }
-
+    .tours .text{
+        width: 80vw;
+    }
     .tours .text h2 {
         font-size: 20px;
     }
@@ -722,11 +731,19 @@ button:hover{
     }
     /* footer section */
     footer .f-content{
-        overflow-x: hidden;
         text-align: center;
         width: 90%;
-        /* width: 60vw; */
-        /* margin-left: -300px; */
+        /* width: 60vw;
+        margin-left: -300px; */
         margin: 50px auto;
+    }
+    footer .social{
+        width: 100vw;
+        gap: 40px;
+    }
+    footer .social img{
+
+        height: 24px;
+        width: 24px;
     }
 }
