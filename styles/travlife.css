@@ -454,7 +454,8 @@ hr {
     font-weight: 400;
     line-height: 26px;
 }
-.newsletter .img{
+
+.newsletter .img {
     width: 60%;
     max-width: 672px;
     background: url(../Images/Rectangle\ 8\ \(1\).png);
@@ -462,6 +463,7 @@ hr {
     background-repeat: no-repeat;
     border-radius: 16px;
 }
+
 .newsletter .discount {
     width: 48%;
     border-radius: 16px;
@@ -478,19 +480,78 @@ hr {
 }
 
 
-.newsletter  .discount p {
+.newsletter .discount p {
     color: #FFF;
     text-align: center;
     font-size: 24px;
     font-weight: 400;
 }
 
-.newsletter  .discount h3 {
+.newsletter .discount h3 {
     color: #FFF;
     font-size: 32px;
     font-weight: 800;
     text-align: center;
 
+}
+
+
+
+/* footer section styles */
+footer {
+    background: rgba(19, 19, 24, 0.05);
+}
+
+footer .f-content {
+    text-align: center;
+    padding: 100px 335px;
+}
+
+footer .f-content .f-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+footer .f-content p {
+    width: 54%;
+    max-width: 770px;
+    margin: 0 auto;
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 32px;
+}
+footer .f-content .social img{
+     width: 40px;
+     height: 40px;
+     cursor: pointer;
+}
+footer .f-content .social{
+    width: 13%;
+    max-width: 175px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px
+}
+.footer hr{
+    width: 61%;
+    max-width: 875px;
+    margin: 0 auto;
+}
+#copyright{
+    font-family: Inter;
+}
+button{
+    cursor: pointer;
+    /* transition: 2s; */
+}
+button:hover{
+    background: linear-gradient(45deg, rgb(26, 25, 25), red);
+    
 }
 /* mobile responsive */
 @media screen and (max-width: 600px) {
@@ -630,18 +691,25 @@ hr {
     .choose .price {
         width: 71vw;
     }
+
     /* newsletter section */
-    .newsletter{
+    .newsletter {
         flex-direction: column;
     }
-    .newsletter .img{
+
+    .newsletter .img {
         width: 82vw;
     }
-    .newsletter .discount{
+
+    .newsletter .discount {
         width: 64%;
         margin-left: 150px;
         margin-bottom: 95px;
         padding: 20px 20px;
     }
-    
+    /* footer section */
+    footer .f-content{
+        width: 90%;
+        margin-left: -300px;
+    }
 }
